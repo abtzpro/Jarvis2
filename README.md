@@ -3,7 +3,7 @@ The real life Ironman JARVIS AI
 
 ## JARVIS2 AI Project
 
-The JARVIS2 AI Project is an ambitious endeavor by Adam Rivers to replicate a real-life JARVIS (Just A Rather Very Intelligent System), akin to that seen in the Marvel Cinematic Universe in the Iron Man movies. Our JARVIS is designed with capabilities in diverse areas, including machine learning, deep learning, web scraping, natural language processing (NLP), computer vision, reinforcement learning, and much more.
+The JARVIS2 AI Project is an ambitious endeavor by Adam Rivers to replicate a real-life JARVIS (Just A Rather Very Intelligent System), akin to that seen in the Marvel Cinematic Universe in the Iron Man movies. Our JARVIS - JARVIS2, is designed with capabilities in diverse areas, including machine learning, deep learning, web scraping, natural language processing (NLP), computer vision, reinforcement learning, and much more.
 
 ## Features
 
