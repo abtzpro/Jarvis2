@@ -1,59 +1,83 @@
 # Jarvis2 AI
 
-A real life Jarvis AI from Iron Man
+Certainly! Let's modify the README to match the details of the script:
 
-## About
-Jarvis2 incorporates various functionalities and libraries to enable neural network modeling, reinforcement learning, web browser integration, unsupervised learning, knowledge base querying, chatbot interactions, multi-modal abilities, predictive modeling, emotion recognition, IoT device management, personal assistant tasks, and integration of all components.
+---
 
-## How does Jarvis2 Work?
+# JARVIS AI Project
 
-1. Neural Network Model: This part of the script demonstrates how to create a simple neural network model using TensorFlow.
+The JARVIS AI Project is an ambitious endeavor to replicate a real-life JARVIS (Just A Rather Very Intelligent System), akin to that seen in the Marvel Cinematic Universe. Our JARVIS is designed with capabilities in diverse areas, including machine learning, deep learning, web scraping, natural language processing (NLP), computer vision, reinforcement learning, and much more.
 
-2. DQL and Reinforcement Learning: This part of the script showcases how to use the stable_baselines3 library to implement Deep Q-Learning (DQL) and learn from an environment (CartPole-v1).
+## Features
 
-3. Web Browser Integration: This part of the script illustrates how to fetch and parse web content using the requests and BeautifulSoup libraries. Remember to replace the URL with your desired target URL.
+- **Deep Learning Models**: JARVIS utilizes a Sequential model from TensorFlow for varied tasks like classification, regression etc.
 
-4. Unsupervised Learning: This part of the script demonstrates how to use the sklearn library to perform unsupervised learning with the K-means clustering algorithm.
+- **Reinforcement Learning**: JARVIS employs both the DQN and the PPO algorithms from stable_baselines3, interacting with environments from OpenAI's gym.
 
-5. Knowledge Base: This part of the script showcases how to connect to a Neo4j graph database using the neo4j library and execute queries.
-	
-6. Chatbot Functions: This part of the script demonstrates the usage of the transformers library for text generation tasks. It utilizes the GPT-2 model and tokenizer to generate responses to user questions.
+- **Web Content Fetching**: The AI can fetch and parse web content using `requests` and `BeautifulSoup`.
 
-7. Multi-modal abilities: This section includes two functions:
-	•	Speech Recognition: Uses the SpeechRecognition library to capture and process audio input.
-	•	Computer Vision: Uses the OpenCV library to perform object detection in images. Remember to replace the file paths with your actual paths.
+- **Unsupervised Learning**: For clustering needs, JARVIS has KMeans algorithm implementation.
 
-8. Predictive Model: This part of the script showcases how to use the sklearn library to create and train a Support Vector Machine (SVM) for predictive modeling.
+- **Knowledge Base**: Neo4j graph database is leveraged for maintaining a robust and scalable knowledge base.
 
-9. Emotion AI Model: This part of the script demonstrates how to use the tensorflow.keras library to load and utilize a pre-trained emotion recognition model. Remember to replace the path to your actual model.
+- **Conversational Abilities**: Enabled by HuggingFace's Transformers library, JARVIS possesses advanced conversational capabilities.
 
-10. IoT device management: This part of the script illustrates how to interact with a Home Assistant instance using the homeassistant library. Remember to replace the URL with your actual Home Assistant URL.
+- **Speech Recognition**: The AI can recognize and understand spoken language using the `speech_recognition` Python library.
 
-11. Personal assistant tasks and scheduling: This section provides a placeholder dictionary (personal_calendar) to store user’s schedules. Modify and extend it to suit your needs.
+- **Computer Vision**: JARVIS 'sees' and processes visual data with a pre-trained model in OpenCV.
 
-12. Wolfram Alpha for accessing factual information: This part of the script showcases how to use the wolframalpha library to query Wolfram Alpha for factual information. Remember to replace the ‘your-wolfram-alpha-app-id’ with your actual Wolfram Alpha App ID.
+- **Predictive Models**: JARVIS uses a Support Vector Machine (SVM) model for making predictive decisions.
 
-13. Multitasking via Python threading: This section includes a threading example to showcase concurrent execution of tasks.
+- **Emotion Recognition**: An emotion AI model is included that helps JARVIS understand human emotions from audio inputs.
 
-14. Integration of all components: This section includes a class (JarvisAI) that integrates all the components mentioned above. It provides methods for prediction, decision making, web content fetching, knowledge base querying, chatbot interactions, listening, image processing, emotion recognition, advanced decision making, predictive decision making, and text generation.
+- **IoT Integration**: Interfacing with the Home Assistant platform allows JARVIS to control IoT devices.
 
-## Disclaimer
-Jarvis 2 is still VERY MUCH a work in progress development, and as such, bugs, glitches, and unforseen issues may arise. Current testing is limited due to developing from a mobile platform. (Machines to be up again soon)
+- **Personal Assistant Tasks and Scheduling**: The AI can manage tasks and schedules.
 
-## Contributing
+## Usage
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
+The primary class is `JarvisAI`. After creating an instance of this class, users can access the various functionalities.
 
-Please make sure to update tests as appropriate.
+```python
+# Create a JarvisAI object
+jarvis = JarvisAI(model, agent, driver, chatbot)
+
+# Get a prediction from the model
+prediction = jarvis.predict(data)
+
+# Fetch web content
+soup = jarvis.fetch_web_content("http://example.com")
+```
+
+## Installation
+
+To run the JARVIS AI project, you'll need to install several libraries and frameworks, including TensorFlow, sklearn, transformers, stable_baselines3, neo4j, BeautifulSoup, gym, speech_recognition, cv2, wikipedia, and wolframalpha. 
+
+Ensure all the file paths, URLs, and credentials (for example, Wolfram Alpha App ID, Neo4j authentication) in the script are correctly set up.
 
 ## Credits
-Developed by 
+Developed By
 
-Adam Rivers https://abtzpro.github.io 
+Adam Rivers 
+(Developer)
+https://abtzpro.github.io
 
-Hello Security LLC https://hellosecurityllc.github.io 
+Hello Security LLC 
+(Developer Company)
+https://hellosecurityllc.github.io
+
+Extra Credit to:
+
+Marvel Studios for the original Iron Man JARVIS AI insipiration.
+
+OpenAI For the Gym functions and access given via API and huggingface of the gpt2 pretrained model. 
+
+Huggingface for the ease of access and hosting of important AI models. 
+
+## Contributions
+
+Your contributions, issues, and feature requests are welcome. Feel free to check the issues page if you want to contribute.
 
 ## License
 
-(See License File) 
+(See LICENSE file)
