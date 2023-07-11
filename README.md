@@ -1,12 +1,8 @@
 # Jarvis2 AI
 
-Certainly! Let's modify the README to match the details of the script:
+## JARVIS2 AI Project
 
----
-
-# JARVIS AI Project
-
-The JARVIS AI Project is an ambitious endeavor to replicate a real-life JARVIS (Just A Rather Very Intelligent System), akin to that seen in the Marvel Cinematic Universe. Our JARVIS is designed with capabilities in diverse areas, including machine learning, deep learning, web scraping, natural language processing (NLP), computer vision, reinforcement learning, and much more.
+The JARVIS2 AI Project is an ambitious endeavor by Adam Rivers to replicate a real-life JARVIS (Just A Rather Very Intelligent System), akin to that seen in the Marvel Cinematic Universe. Our JARVIS is designed with capabilities in diverse areas, including machine learning, deep learning, web scraping, natural language processing (NLP), computer vision, reinforcement learning, and much more.
 
 ## Features
 
