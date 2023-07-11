@@ -31,26 +31,36 @@ The JARVIS2 AI Project is an ambitious endeavor by Adam Rivers to replicate a re
 
 - **Personal Assistant Tasks and Scheduling**: The AI can manage tasks and schedules.
 
-## Usage
+# How to Use the JARVIS2 AI Script
 
-The primary class is `JarvisAI`. After creating an instance of this class, users can access the various functionalities.
+This script provides a basic skeleton of an AI system inspired by JARVIS from the Iron Man films. It's designed to be flexible and modular, allowing for extensive customization based on your specific requirements. Here are step-by-step instructions on how to use the script:
 
-```python
-# Create a JarvisAI object
-jarvis = JarvisAI(model, agent, driver, chatbot)
+1. **Installation**
+   To run the script, first, make sure you have all the necessary libraries installed. You can do this by using pip, a package manager for Python. Install the libraries with the following command:
+   
+   ```
+   pip install tensorflow sklearn transformers stable-baselines3 neo4j requests bs4 gym speechrecognition opencv-python scikit-learn keras wikipedia wolframalpha homeassistant
+   ```
+   
+2. **Configuration**
+   Before running the script, you need to set up a few things:
+   - Replace all instances of `'path_to_'` with the actual paths to your files. For example, the path to your emotion model, the path to your Computer Vision model, etc.
+   - Set up your Neo4j database, and replace `'localhost:7687'` and `('neo4j', 'password')` with your actual Neo4j bolt URI and credentials.
+   - Replace `'your-wolfram-alpha-app-id'` with your actual Wolfram Alpha app ID.
+   - Replace `'http://your-home-assistant-url'` with your actual Home Assistant URL.
+   
+3. **Running the Script**
+   You can then run the script using Python by navigating to the directory where the script is located and running `python jarvis.py` from the command line. 
+   
+   However, keep in mind that this script is not a complete implementation. It is a skeleton meant to provide a starting point for building an AI system like JARVIS. You will need to fill in many of the details, like training the models, managing the datasets, and defining the specific behaviors you want from your AI.
+   
+4. **Extending the Script**
+   One of the primary goals of this script is to provide a modular starting point for building a complex AI system. This means you can easily extend it with new functionality:
+   - You can add new methods to the `JarvisAI` class.
+   - You can replace the models used for various tasks with ones that better suit your needs.
+   - You can integrate with other systems and services to provide more features. 
 
-# Get a prediction from the model
-prediction = jarvis.predict(data)
-
-# Fetch web content
-soup = jarvis.fetch_web_content("http://example.com")
-```
-
-## Installation
-
-To run the JARVIS2 AI project, you'll need to install several libraries and frameworks, including TensorFlow, sklearn, transformers, stable_baselines3, neo4j, BeautifulSoup, gym, speech_recognition, cv2, wikipedia, and wolframalpha. 
-
-Ensure all the file paths, URLs, and credentials (for example, Wolfram Alpha App ID, Neo4j authentication) in the script are correctly set up.
+Remember, this is a complex project that involves many different fields of AI, including machine learning, natural language processing, and more. You'll likely need a strong understanding of these topics to fully utilize and customize this script.
 
 ## Placeholder Functions
 
