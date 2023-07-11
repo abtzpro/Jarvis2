@@ -43,6 +43,8 @@ pip install python-dotenv
 
 ## Installation
 
+(Check the releases for the most recent release) 
+
 1. Clone this repository to your local machine.
 
 ```bash
