@@ -52,6 +52,18 @@ To run the JARVIS AI project, you'll need to install several libraries and frame
 
 Ensure all the file paths, URLs, and credentials (for example, Wolfram Alpha App ID, Neo4j authentication) in the script are correctly set up.
 
+## Placeholder Functions
+
+The JARVIS2 AI script currently includes a few placeholder functions. They are methods that have been defined but currently lack a concrete implementation. The purpose of these placeholders is to outline the desired functionality and serve as a guide for future development. Here's a brief description of them:
+
+1. `understand_emotion`: This method is intended to analyze the emotional content of an audio input using a pre-trained emotion recognition model. The placeholder is a call to the emotion model's `predict` method, but the preprocessing steps required to convert raw audio data into a suitable format for the model are not yet implemented.
+
+2. `generate_text`: This function is a placeholder for generating conversational responses from JARVIS. It uses a GPT-3 model to generate text based on a given prompt. Note that to utilize this, you need to have a GPT-3 model readily available, which is not currently open-sourced or available for free.
+
+3. `make_predictive_decision`: This function serves as a placeholder for making predictions based on a data input using a pre-trained predictive model. At present, it calls the `predict` method of an SVM model but doesn't specify how the model is trained or how the input data should be preprocessed.
+
+It's **important to note** that to fully utilize these placeholder functions, you'll need to provide a suitable dataset, perform necessary preprocessing, train or fine-tune the model, and possibly modify the method to suit your specific needs.
+
 ## Active-Dev Disclaimer 
 Please note that the JARVIS AI Project is still in the active development stage. As such, it is likely to contain bugs, glitches, or other issues. These may affect the project’s stability and performance. We appreciate your patience and understanding as we work diligently to iron (man) out these issues and improve the system. Please feel free to report any bugs or problems you encounter, and we’ll do our best to address them promptly. We welcome all feedback and suggestions that can help enhance the development and effectiveness of this project. Thank you for your support!
 
