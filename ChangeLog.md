@@ -16,4 +16,4 @@ Access to Jarvis AI features via GUI are documented below.
 
 *please note that the effectiveness and flow of these implementations relies solely on whether the models used are trained and will differ depending on your use case. These functions and others can be addressed & assigned in the JarvisAI Class.*
 
--Some Bugs and errors have been addressed. Streamligning of some core features finished and more comments have been adding for clarity. 
+-Some Bugs and errors have been addressed. Streamlining of some core features finished and more comments have been adding for clarity. 
