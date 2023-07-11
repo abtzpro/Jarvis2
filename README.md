@@ -81,6 +81,27 @@ query_result = jarvis.query_knowledge_base(query)
 response = jarvis.ask_jarvis(question)
 ```
 
+The JarvisAI class is essentially a “box” that contains all the features and functionalities provided by the script. These include abilities like making predictions, fetching web content, asking questions to the AI, controlling IoT devices, and more. To use any of these functions, you first need to create an instance of the JarvisAI class.
+
+Creating an instance of a class is a common practice in object-oriented programming. You can think of it as creating a personal copy of the “box” that you can play with. Here is how you do that:
+
+jarvis = JarvisAI(model, agent, driver, chatbot)
+
+Now, jarvis is an instance (or object) of the JarvisAI class. model, agent, driver, and chatbot are the building blocks of JarvisAI that you’re passing to it. They were all set up in the earlier parts of the script. You don’t need to worry about their inner workings for now.
+
+Once you have your jarvis instance, you can use it to call various methods. Think of these methods as individual tools inside the “box”. For example, if you want JarvisAI to make a prediction based on some data, you can use the predict method:
+
+data = [...]  # your data here
+prediction = jarvis.predict(data)
+
+Similarly, you can use other methods for different tasks. For example, if you want JarvisAI to fetch content from a web page, you can use the fetch_web_content method:
+
+url = "http://example.com"  # replace with the URL you want to fetch content from
+content = jarvis.fetch_web_content(url)
+
+This is the basic idea of how you interact with JarvisAI. If you’re new to programming, some of these concepts might feel a bit complicated, but as you gain more experience, they will become second nature.
+
+
 ## Contributing
 
 We welcome all contributions. You can submit any ideas as pull requests or as GitHub issues. If you'd like to improve code submit a pull request outlining the request.
