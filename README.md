@@ -69,9 +69,9 @@ First, you initialize the JarvisAI model:
 
 jarvis = JarvisAI(model, agent, driver, chatbot)
 
-The model, agent, driver, and chatbot are instances of the Neural Network Model, Reinforcement Learning Agents, Knowledge Base, and the Chatbot Functions respectively, which have been defined earlier in your script.
+The model, agent, driver, and chatbot are instances of the Neural Network Model, Reinforcement Learning Agents, Knowledge Base, and the Chatbot Functions respectively, which have been defined earlier in the jarvis.py script.
 
-Following are a few examples of how to interact with the JarvisAI model:
+Following are a few examples of how to interact with the Jarvis2AI model:
 
 	1.	Ask Jarvis a Question
 You can ask Jarvis a question using natural language as follows:
