@@ -73,45 +73,54 @@ The model, agent, driver, and chatbot are instances of the Neural Network Model,
 
 Following are a few examples of how to interact with the Jarvis2AI model:
 
-	1.	Ask Jarvis a Question
+1. Ask Jarvis a Question
 You can ask Jarvis a question using natural language as follows:
 
+```
 question = "What's the weather like today?"
 answer = jarvis.ask_jarvis(question)
 print(answer)
-
-	1.	This will print the response of Jarvis to your question.
-	2.	Fetch Web Content
+```
+ This will print the response of Jarvis to your question.
+	
+ 2.	Fetch Web Content
 You can use Jarvis to fetch and parse web content as follows:
 
+```
 url = "http://example.com"
 soup = jarvis.fetch_web_content(url)
 print(soup.prettify())
-
-	2.	This will print the parsed HTML content from the specified URL.
-	3.	Query Knowledge Base
+```
+This will print the parsed HTML content from the specified URL.
+	
+ 3.	Query Knowledge Base
 You can query your knowledge base (which is a Neo4j database as per your script) using the Jarvis AI:
 
+```
 query = "MATCH (n) RETURN n"
 result = jarvis.query_knowledge_base(query)
 print(result)
-
-	3.	This will print the result of the Neo4j query.
-	4.	Make Decisions Based on Observations
+```
+This will print the result of the Neo4j query.
+	
+ 4.	Make Decisions Based on Observations
 Jarvis can make decisions based on observations from the gym environment:
 
+```
 observation = env.reset()
 action = jarvis.make_decision(observation)
 print(action)
-
-	4.	This will print the action Jarvis decides to take based on the provided observation.
-	5.	Listen to User Speech
+```
+This will print the action Jarvis decides to take based on the provided observation.
+	
+ 5.	Listen to User Speech
 You can use Jarvis to transcribe spoken words into text:
 
+```
 spoken_text = jarvis.listen()
 print(spoken_text)
-
-	5.	This will print the transcribed text from the spoken words.
+```
+This will print the transcribed text from the spoken words.
 
 These are just a few examples. Results may vary depending on your environment, setup, and use case. 
 
