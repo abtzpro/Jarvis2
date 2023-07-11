@@ -66,9 +66,9 @@ Remember, this is a complex project that involves many different fields of AI, i
 Interacting with the JarvisAI model, as defined in the jarvis.py script, involves initializing the JarvisAI object and then calling the desired methods for various functionalities. Here is a step-by-step guide:
 
 First, you initialize the JarvisAI model:
-
+```
 jarvis = JarvisAI(model, agent, driver, chatbot)
-
+```
 The model, agent, driver, and chatbot are instances of the Neural Network Model, Reinforcement Learning Agents, Knowledge Base, and the Chatbot Functions respectively, which have been defined earlier in the jarvis.py script.
 
 Following are a few examples of how to interact with the Jarvis2AI model:
@@ -94,7 +94,7 @@ print(soup.prettify())
 This will print the parsed HTML content from the specified URL.
 	
  3.	Query Knowledge Base
-You can query your knowledge base (which is a Neo4j database as per your script) using the Jarvis AI:
+You can query your knowledge base (which is a Neo4j database as per the jarvis.py script) using the Jarvis AI:
 
 ```
 query = "MATCH (n) RETURN n"
