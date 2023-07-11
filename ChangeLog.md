@@ -1,4 +1,5 @@
-Release v1.1-Alpha-Build > a rough hewn GUI is added.
+Release v1.1-Alpha-Build > 
+-a rough hewn GUI is added.
 Access to Jarvis AI features via GUI are documented below.
 
 	1.	Ask Jarvis: The user can input any question into the entry field and then click the “Ask Jarvis” button. Jarvis will attempt to generate a text response to the question.
@@ -12,4 +13,6 @@ Access to Jarvis AI features via GUI are documented below.
 	9.	Generate Text: The user can input a text prompt into the entry field and then click the “Generate Text” button. Jarvis will attempt to generate a piece of text based on this prompt using the GPT-3 model.
 	10.	Query Knowledge Base: The user can input a query into the entry field and then click the “Query Knowledge Base” button. Jarvis will attempt to run this query on the connected Neo4j graph database and return the results.
 
-please note that the effectiveness and flow of these implementations relies solely on whether the models used are trained and will differ depending on your use case. These functions and others can be addressed & assigned in the JarvisAI Class. 
+*please note that the effectiveness and flow of these implementations relies solely on whether the models used are trained and will differ depending on your use case. These functions and others can be addressed & assigned in the JarvisAI Class.*
+
+-Some Bugs and errors have been addressed. Streamligning of some core features finished and more comments have been adding for clarity. 
