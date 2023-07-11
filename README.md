@@ -1,167 +1,121 @@
 # Jarvis2 AI
 The real life Ironman JARVIS AI
 
-## JARVIS2 AI Project
+# Jarvis2 AI
 
-The JARVIS2 AI Project is an ambitious endeavor by Adam Rivers to replicate a real-life JARVIS (Just A Rather Very Intelligent System), akin to that seen in the Marvel Cinematic Universe in the Iron Man movies. Our JARVIS - JARVIS2, is designed with capabilities in diverse areas, including machine learning, deep learning, web scraping, natural language processing (NLP), computer vision, reinforcement learning, and much more.
+Welcome to the Jarvis2 AI project! Jarvis2 AI or JarvisAI for short, is an intelligent, multi-modal, and versatile AI platform designed to solve a multitude of tasks ranging from neural network predictions, deep reinforcement learning, web scraping, knowledge graph querying, natural language processing, speech recognition, computer vision, to IoT device control.
 
 ## Features
 
-- **Deep Learning Models**: JARVIS2 utilizes a Sequential model from TensorFlow for varied tasks like classification, regression etc.
+1. **Neural Network Prediction**: TensorFlow-based sequential model for predictions.
+2. **Reinforcement Learning**: DQL and PPO based learning using the OpenAI Gym environment.
+3. **Web Scraping**: Fetches web content using Requests and BeautifulSoup.
+4. **Unsupervised Learning**: KMeans clustering on given datasets.
+5. **Knowledge Base**: Neo4j graph database for storing and querying data.
+6. **Chatbot**: Chatbot functionality with transformer-based conversational pipeline.
+7. **NLP**: Better communication abilities with GPT-3 Language Model and GPT-2 Tokenizer.
+8. **Speech Recognition**: Uses the SpeechRecognition library for converting speech to text.
+9. **Computer Vision**: Object detection with OpenCV.
+10. **Predictive Models**: SVC model from sklearn for predictions.
+11. **Emotion AI**: TensorFlow Keras model for emotion recognition.
+12. **IoT Device Management**: Home Assistant for managing smart home devices.
+13. **Task Scheduling**: Personal assistant functionality for scheduling tasks.
+14. **Fact Fetching**: Wolfram Alpha for factual information.
 
-- **Reinforcement Learning**: JARVIS2 employs both the DQN and the PPO algorithms from stable_baselines3, interacting with environments from OpenAI's gym.
+## Prerequisites
 
-- **Web Content Fetching**: The AI can fetch and parse web content using `requests` and `BeautifulSoup`.
+The project requires the following dependencies to be installed. Use pip to install them:
 
-- **Unsupervised Learning**: For clustering needs, JARVIS2 has KMeans algorithm implementation.
-
-- **Knowledge Base**: Neo4j graph database is leveraged for maintaining a robust and scalable knowledge base.
-
-- **Conversational Abilities**: Enabled by HuggingFace's Transformers library, JARVIS2 possesses advanced conversational capabilities.
-
-- **Speech Recognition**: The AI can recognize and understand spoken language using the `speech_recognition` Python library.
-
-- **Computer Vision**: JARVIS2 'sees' and processes visual data with a pre-trained model in OpenCV.
-
-- **Predictive Models**: JARVIS2 uses a Support Vector Machine (SVM) model for making predictive decisions.
-
-- **Emotion Recognition**: An emotion AI model is included that helps JARVIS2 understand human emotions from audio inputs.
-
-- **IoT Integration**: Interfacing with the Home Assistant platform allows JARVIS2 to control IoT devices.
-
-- **Personal Assistant Tasks and Scheduling**: The AI can manage tasks and schedules.
-
-# How to Use the JARVIS2 AI Script
-
-This script provides a basic skeleton of an AI system inspired by JARVIS from the Iron Man films. It's designed to be flexible and modular, allowing for extensive customization based on your specific requirements. Here are step-by-step instructions on how to use the script:
-
-1. **Installation**
-   To run the script, first, make sure you have all the necessary libraries installed. You can do this by using pip, a package manager for Python. Install the libraries with the following command:
-   
-   ```
-   pip install tensorflow sklearn transformers stable-baselines3 neo4j requests bs4 gym speechrecognition opencv-python scikit-learn keras wikipedia wolframalpha homeassistant
-   ```
-   
-2. **Configuration**
-   Before running the script, you need to set up a few things:
-   - Replace all instances of `'path_to_'` with the actual paths to your files. For example, the path to your emotion model, the path to your Computer Vision model, etc.
-   - Set up your Neo4j database, and replace `'localhost:7687'` and `('neo4j', 'password')` with your actual Neo4j bolt URI and credentials.
-   - Replace `'your-wolfram-alpha-app-id'` with your actual Wolfram Alpha app ID.
-   - Replace `'http://your-home-assistant-url'` with your actual Home Assistant URL.
-   
-3. **Running the Script**
-   You can then run the script using Python by navigating to the directory where the script is located and running `python jarvis.py` from the command line. 
-   
-   However, keep in mind that this script is not a complete implementation. It is a skeleton meant to provide a starting point for building an AI system like JARVIS. You will need to fill in many of the details, like training the models, managing the datasets, and defining the specific behaviors you want from your AI.
-   
-4. **Extending the Script**
-   One of the primary goals of this script is to provide a modular starting point for building a complex AI system. This means you can easily extend it with new functionality:
-   - You can add new methods to the `JarvisAI` class.
-   - You can replace the models used for various tasks with ones that better suit your needs.
-   - You can integrate with other systems and services to provide more features. 
-
-Remember, this is a complex project that involves many different fields of AI, including machine learning, natural language processing, and more. You'll likely need a strong understanding of these topics to fully utilize and customize this script.
-
-## Interacting with JARVIS2 
-Interacting with the JarvisAI model, as defined in the jarvis.py script, involves initializing the JarvisAI object and then calling the desired methods for various functionalities. Here is a step-by-step guide:
-
-First, you initialize the JarvisAI model:
+```bash
+pip install tensorflow
+pip install sklearn
+pip install transformers
+pip install stable-baselines3
+pip install neo4j
+pip install requests
+pip install bs4
+pip install gym
+pip install SpeechRecognition
+pip install opencv-python
+pip install python-dotenv
 ```
+
+## Installation
+
+1. Clone this repository to your local machine.
+
+```bash
+git clone https://github.com/abtzpro/Jarvis2
+```
+
+2. Navigate to the directory of the project.
+
+```bash
+cd Jarvis2
+```
+
+3. Install the requirements.
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Create a `.env` file and store your environment variables there. 
+
+## Usage
+
+Create an instance of the JarvisAI class:
+
+```python
 jarvis = JarvisAI(model, agent, driver, chatbot)
 ```
-The model, agent, driver, and chatbot are instances of the Neural Network Model, Reinforcement Learning Agents, Knowledge Base, and the Chatbot Functions respectively, which have been defined earlier in the jarvis.py script.
 
-Following are a few examples of how to interact with the Jarvis2AI model:
+Now you can use JarvisAI to perform various tasks, such as:
 
-1. Ask Jarvis a Question
-You can ask Jarvis a question using natural language as follows:
-
+```python
+result = jarvis.predict(data)
+decision = jarvis.make_decision(observation)
+web_content = jarvis.fetch_web_content(url)
+query_result = jarvis.query_knowledge_base(query)
+response = jarvis.ask_jarvis(question)
 ```
-question = "What's the weather like today?"
-answer = jarvis.ask_jarvis(question)
-print(answer)
-```
- This will print the response of Jarvis to your question.
-	
- 2.	Fetch Web Content
-You can use Jarvis to fetch and parse web content as follows:
 
-```
-url = "http://example.com"
-soup = jarvis.fetch_web_content(url)
-print(soup.prettify())
-```
-This will print the parsed HTML content from the specified URL.
-	
- 3.	Query Knowledge Base
-You can query your knowledge base (which is a Neo4j database as per the jarvis.py script) using the Jarvis AI:
+## Contributing
 
-```
-query = "MATCH (n) RETURN n"
-result = jarvis.query_knowledge_base(query)
-print(result)
-```
-This will print the result of the Neo4j query.
-	
- 4.	Make Decisions Based on Observations
-Jarvis can make decisions based on observations from the gym environment:
-
-```
-observation = env.reset()
-action = jarvis.make_decision(observation)
-print(action)
-```
-This will print the action Jarvis decides to take based on the provided observation.
-	
- 5.	Listen to User Speech
-You can use Jarvis to transcribe spoken words into text:
-
-```
-spoken_text = jarvis.listen()
-print(spoken_text)
-```
-This will print the transcribed text from the spoken words.
-
-These are just a few examples. Results may vary depending on your environment, setup, and use case. 
-
-## Placeholder Functions
-
-The JARVIS2 AI script currently includes a few placeholder functions. They are methods that have been defined but currently lack a concrete implementation. The purpose of these placeholders is to outline the desired functionality and serve as a guide for future development. Here's a brief description of them:
-
-1. `understand_emotion`: This method is intended to analyze the emotional content of an audio input using a pre-trained emotion recognition model. The placeholder is a call to the emotion model's `predict` method, but the preprocessing steps required to convert raw audio data into a suitable format for the model are not yet implemented.
-
-2. `generate_text`: This function is a placeholder for generating conversational responses from JARVIS2. It uses a GPT-3 model to generate text based on a given prompt. Note that to utilize this, you need to have a GPT-3 model readily available.
-
-3. `make_predictive_decision`: This function serves as a placeholder for making predictions based on a data input using a pre-trained predictive model. At present, it calls the `predict` method of an SVM model but doesn't specify how the model is trained or how the input data should be preprocessed.
-
-It's **important to note** that to fully utilize these placeholder functions, you'll need to provide a suitable dataset, perform necessary preprocessing, train or fine-tune the model, and possibly modify the method to suit your specific needs.
-
-## Active-Dev Disclaimer 
-Please note that the JARVIS2 AI Project is still in the active development stage. As such, it is likely to contain bugs, glitches, or other issues. These may affect the project’s stability and performance. We appreciate your patience and understanding as we work diligently to iron (man) out these issues and improve the system. Please feel free to report any bugs or problems you encounter, and we’ll do our best to address them promptly. We welcome all feedback and suggestions that can help enhance the development and effectiveness of this project. Thank you for your support!
-
-## Credits
-*Developed By*
-
-Adam Rivers 
-(Developer)
-https://abtzpro.github.io
-
-Hello Security LLC 
-(Developer Company)
-https://hellosecurityllc.github.io
-
-*Extra Credit to:*
-
-Marvel Studios for the original Iron Man JARVIS AI insipiration.
-
-OpenAI For the Gym functions and access given via API and huggingface of the gpt2 pretrained model. 
-
-Huggingface for the ease of access and hosting of important AI models. 
-
-## Contributions
-
-Your contributions, issues, and feature requests are welcome. Feel free to check the issues page if you want to contribute.
+We welcome all contributions. You can submit any ideas as pull requests or as GitHub issues. If you'd like to improve code submit a pull request outlining the request.
 
 ## License
 
-(See LICENSE file)
+See the LICENSE file
+
+## Contact
+
+If you want to contact me you can reach me at `https://abtzpro.github.io`.
+
+## Credits
+
+Developed by:
+
+Adam Rivers
+(Developer)
+https://abtzpro.github.io
+
+Hello Security LLC
+(Developer Company)
+https://hellosecurityllc.github.io
+
+# Disclaimer: In Active Development
+
+Please note that the Jarvis AI project is currently under active development. This means that the software and its features are subject to change as we continue to make improvements, add new features, and fix bugs. While we strive to maintain a stable and functioning product, please understand that there may be occasional disruptions or inconsistencies in the software's behavior or functionality. 
+
+We appreciate your understanding and patience during this period of active development. We encourage you to report any bugs or issues you encounter, as well as suggest any improvements or features you would like to see in future versions of Jarvis AI. Your feedback is vital for the progress and refinement of this project. Thank you for your ongoing support.
+
+## Special Thanks
+
+This project would not have been possible without the open-source libraries used to bring Jarvis AI to life. A big thank you goes out to the creators and maintainers of TensorFlow, scikit-learn, Beautiful Soup, SpeechRecognition, stable-baselines3, neo4j, gym, and many others. Your work is invaluable for the development of AI and Machine Learning applications. 
+
+Furthermore, a special mention goes to the creators and maintainers of the Transformers library by Hugging Face. The ease-of-use and accessibility of this resource have simplified and accelerated the development of Natural Language Processing tasks and applications. Your efforts are greatly appreciated by this community.
+
+This project is named in homage to Jarvis, the AI assistant of Tony Stark (Iron Man) in the Marvel Cinematic Universe. We want to acknowledge and extend our thanks to the original creators of Iron Man: writer and editor Stan Lee, scripter Larry Lieber, and artists Don Heck and Jack Kirby. Additionally, we want to thank director Jon Favreau and actor Robert Downey Jr. for bringing Iron Man and his iconic AI Jarvis to life on the big screen in such an unforgettable way.
+
+Last but not least, we want to thank all the users and contributors of the Jarvis AI project. Your feedback and contributions drive this project forward and make it better every day. We sincerely appreciate your involvement.
