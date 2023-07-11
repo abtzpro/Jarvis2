@@ -62,6 +62,59 @@ This script provides a basic skeleton of an AI system inspired by JARVIS from th
 
 Remember, this is a complex project that involves many different fields of AI, including machine learning, natural language processing, and more. You'll likely need a strong understanding of these topics to fully utilize and customize this script.
 
+## Interacting with JARVIS2 
+Interacting with the JarvisAI model, as defined in the jarvis.py script, involves initializing the JarvisAI object and then calling the desired methods for various functionalities. Here is a step-by-step guide:
+
+First, you initialize the JarvisAI model:
+
+jarvis = JarvisAI(model, agent, driver, chatbot)
+
+The model, agent, driver, and chatbot are instances of the Neural Network Model, Reinforcement Learning Agents, Knowledge Base, and the Chatbot Functions respectively, which have been defined earlier in your script.
+
+Following are a few examples of how to interact with the JarvisAI model:
+
+	1.	Ask Jarvis a Question
+You can ask Jarvis a question using natural language as follows:
+
+question = "What's the weather like today?"
+answer = jarvis.ask_jarvis(question)
+print(answer)
+
+	1.	This will print the response of Jarvis to your question.
+	2.	Fetch Web Content
+You can use Jarvis to fetch and parse web content as follows:
+
+url = "http://example.com"
+soup = jarvis.fetch_web_content(url)
+print(soup.prettify())
+
+	2.	This will print the parsed HTML content from the specified URL.
+	3.	Query Knowledge Base
+You can query your knowledge base (which is a Neo4j database as per your script) using the Jarvis AI:
+
+query = "MATCH (n) RETURN n"
+result = jarvis.query_knowledge_base(query)
+print(result)
+
+	3.	This will print the result of the Neo4j query.
+	4.	Make Decisions Based on Observations
+Jarvis can make decisions based on observations from the gym environment:
+
+observation = env.reset()
+action = jarvis.make_decision(observation)
+print(action)
+
+	4.	This will print the action Jarvis decides to take based on the provided observation.
+	5.	Listen to User Speech
+You can use Jarvis to transcribe spoken words into text:
+
+spoken_text = jarvis.listen()
+print(spoken_text)
+
+	5.	This will print the transcribed text from the spoken words.
+
+These are just a few examples. Results may vary depending on your environment, setup, and use case. 
+
 ## Placeholder Functions
 
 The JARVIS2 AI script currently includes a few placeholder functions. They are methods that have been defined but currently lack a concrete implementation. The purpose of these placeholders is to outline the desired functionality and serve as a guide for future development. Here's a brief description of them:
