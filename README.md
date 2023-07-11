@@ -58,7 +58,7 @@ The JARVIS2 AI script currently includes a few placeholder functions. They are m
 
 1. `understand_emotion`: This method is intended to analyze the emotional content of an audio input using a pre-trained emotion recognition model. The placeholder is a call to the emotion model's `predict` method, but the preprocessing steps required to convert raw audio data into a suitable format for the model are not yet implemented.
 
-2. `generate_text`: This function is a placeholder for generating conversational responses from JARVIS. It uses a GPT-3 model to generate text based on a given prompt. Note that to utilize this, you need to have a GPT-3 model readily available, which is not currently open-sourced or available for free.
+2. `generate_text`: This function is a placeholder for generating conversational responses from JARVIS. It uses a GPT-3 model to generate text based on a given prompt. Note that to utilize this, you need to have a GPT-3 model readily available.
 
 3. `make_predictive_decision`: This function serves as a placeholder for making predictions based on a data input using a pre-trained predictive model. At present, it calls the `predict` method of an SVM model but doesn't specify how the model is trained or how the input data should be preprocessed.
 
