@@ -67,6 +67,8 @@ pip install -r requirements.txt
 
 ## Usage
 
+(v1.1-Alpha-Build Contains a rudimentary GUI or graphical user interface enabling a user to interact with some of JarvisAI's core functions easier)
+
 Create an instance of the JarvisAI class:
 
 ```python
