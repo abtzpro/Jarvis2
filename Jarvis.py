@@ -1,3 +1,6 @@
+import threading
+import tkinter as tk
+from tkinter import filedialog, messagebox
 import tensorflow as tf
 from sklearn.cluster import KMeans
 from transformers import pipeline, GPT3LMHeadModel, GPT2Tokenizer
@@ -10,9 +13,6 @@ import speech_recognition as sr
 import cv2
 from sklearn import svm
 from tensorflow.keras.models import load_model
-from datetime import datetime
-import pytz
-import threading
 import wikipedia
 import wolframalpha
 from homeassistant import HomeAssistant
@@ -181,3 +181,65 @@ class JarvisAI:
     def fetch_fact(self, query):
         res = wolframalpha_client.query(query)
         return next(res.results).text
+
+# Initialize JarvisAI
+jarvis = JarvisAI(model, agent, driver, chatbot)
+
+# GUI Components
+def create_gui():
+    window = tk.Tk()
+    window.title("JarvisAI")
+
+    # Button for asking Jarvis a question
+    ask_button = tk.Button(window, text="Ask Jarvis", command=lambda: jarvis.ask_jarvis(entry.get()))
+    ask_button.pack()
+
+    # Entry field for questions to Jarvis
+    entry = tk.Entry(window)
+    entry.pack()
+
+    # Label for displaying Jarvis' response
+    response_label = tk.Label(window, text="")
+    response_label.pack()
+
+    # Button for making a prediction
+    predict_button = tk.Button(window, text="Predict", command=lambda: jarvis.predict(entry.get()))
+    predict_button.pack()
+
+    # Button for making a decision
+    decision_button = tk.Button(window, text="Make Decision", command=lambda: jarvis.make_decision(entry.get()))
+    decision_button.pack()
+
+    # Button for making an advanced decision
+    advanced_decision_button = tk.Button(window, text="Make Advanced Decision", command=lambda: jarvis.make_advanced_decision(entry.get()))
+    advanced_decision_button.pack()
+
+    # Button for making a predictive decision
+    predictive_decision_button = tk.Button(window, text="Make Predictive Decision", command=lambda: jarvis.make_predictive_decision(entry.get()))
+    predictive_decision_button.pack()
+
+    # Button for controlling IoT devices
+    iot_control_button = tk.Button(window, text="Control IoT Device", command=lambda: jarvis.control_iot_devices(entry.get()))
+    iot_control_button.pack()
+
+    # Button for scheduling tasks
+    schedule_task_button = tk.Button(window, text="Schedule Task", command=lambda: jarvis.schedule_tasks(entry.get()))
+    schedule_task_button.pack()
+
+    # Button for fetching a fact
+    fetch_fact_button = tk.Button(window, text="Fetch Fact", command=lambda: jarvis.fetch_fact(entry.get()))
+    fetch_fact_button.pack()
+
+    # Button for generating text
+    generate_text_button = tk.Button(window, text="Generate Text", command=lambda: jarvis.generate_text(entry.get()))
+    generate_text_button.pack()
+
+    # Button for querying knowledge base
+    query_knowledge_button = tk.Button(window, text="Query Knowledge Base", command=lambda: jarvis.query_knowledge_base(entry.get()))
+    query_knowledge_button.pack()
+
+    window.mainloop()
+
+# Call the GUI creation function
+create_gui()
+
