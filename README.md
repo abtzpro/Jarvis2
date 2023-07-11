@@ -52,8 +52,11 @@ To run the JARVIS AI project, you'll need to install several libraries and frame
 
 Ensure all the file paths, URLs, and credentials (for example, Wolfram Alpha App ID, Neo4j authentication) in the script are correctly set up.
 
+## Active-Dev Disclaimer 
+Please note that the JARVIS AI Project is still in the active development stage. As such, it is likely to contain bugs, glitches, or other issues. These may affect the project’s stability and performance. We appreciate your patience and understanding as we work diligently to iron (man) out these issues and improve the system. Please feel free to report any bugs or problems you encounter, and we’ll do our best to address them promptly. We welcome all feedback and suggestions that can help enhance the development and effectiveness of this project. Thank you for your support!
+
 ## Credits
-Developed By
+*Developed By*
 
 Adam Rivers 
 (Developer)
@@ -63,7 +66,7 @@ Hello Security LLC
 (Developer Company)
 https://hellosecurityllc.github.io
 
-Extra Credit to:
+*Extra Credit to:*
 
 Marvel Studios for the original Iron Man JARVIS AI insipiration.
 
