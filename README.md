@@ -1,4 +1,4 @@
-![Jarvis2 AI Logo](https://github.com/abtzpro/Jarvis2/blob/main/D2468FAD-437B-4A23-B0C3-DA1BF67B27A5.png)
+![Jarvis2 Logo2](https://github.com/abtzpro/Jarvis2/blob/main/C0C85BBF-366B-4BB3-930C-6FB45108E328.png)
 
 *The real life Ironman JARVIS AI*
 
@@ -109,6 +109,9 @@ This is the basic idea of how you interact with JarvisAI. If you’re new to pro
 ## Mockups & Images
 
 ![Jarvis2 Mockup 1](https://github.com/abtzpro/Jarvis2/blob/main/C23A9F31-5484-453C-ADE1-5E1EADE3E9A5.png)
+
+![Jarvis2 Logo2](https://github.com/abtzpro/Jarvis2/blob/main/C0C85BBF-366B-4BB3-930C-6FB45108E328.png)
+
 
 ## Contributing
 
