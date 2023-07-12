@@ -84,7 +84,7 @@ web_content = jarvis.fetch_web_content(url)
 query_result = jarvis.query_knowledge_base(query)
 response = jarvis.ask_jarvis(question)
 ```
-# Usage (Breakdown) 
+## Usage (Breakdown) 
 
 The JarvisAI class is essentially a “box” that contains all the features and functionalities provided by the script. These include abilities like making predictions, fetching web content, asking questions to the AI, controlling IoT devices, and more. To use any of these functions, you first need to create an instance of the JarvisAI class.
 
