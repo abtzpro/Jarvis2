@@ -106,6 +106,8 @@ content = jarvis.fetch_web_content(url)
 ```
 This is the basic idea of how you interact with JarvisAI. If you’re new to programming, some of these concepts might feel a bit complicated, but as you gain more experience, they will become second nature.
 
+Check the **Jarvis2 Wiki** here https://github.com/abtzpro/Jarvis2/wiki if you need further assistance 
+
 ## Mockups & Images
 
 ![Jarvis2 Mockup 1](https://github.com/abtzpro/Jarvis2/blob/main/C23A9F31-5484-453C-ADE1-5E1EADE3E9A5.png)
