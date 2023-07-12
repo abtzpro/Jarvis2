@@ -1,6 +1,6 @@
 ![Jarvis2 Logo2](https://github.com/abtzpro/Jarvis2/blob/main/C0C85BBF-366B-4BB3-930C-6FB45108E328.png)
 
-*The real life Ironman JARVIS AI*
+*Integrated AI Assistant Platform*
 
 # Jarvis2 AI
 
