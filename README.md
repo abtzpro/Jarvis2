@@ -2,6 +2,8 @@
 
 *Integrated AI Assistant Platform*
 
+https://jarvis2ai.godaddysites.com
+
 # Jarvis2 AI
 
 Welcome to the Jarvis2 AI project! Jarvis2 AI or JarvisAI for short, is an intelligent, multi-modal, and versatile AI platform designed to solve a multitude of tasks ranging from neural network predictions, deep reinforcement learning, web scraping, knowledge graph querying, natural language processing, speech recognition, computer vision, to IoT device control.
